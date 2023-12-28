@@ -37,8 +37,12 @@ const bookSlice = createSlice({
             const newBook = action.payload;
             return [...state, newBook];
         },
+        updateBook: (state, action) => {
+            const updatedBook = action.payload;
+            return state.map(book => (book.id === updatedBook.id ? { ...book, ...updatedBook } : book));
+        },
     },
 });
 
-export const { removeBook, addBook } = bookSlice.actions;
+export const { removeBook, addBook, updateBook } = bookSlice.actions;
 export default bookSlice.reducer;
