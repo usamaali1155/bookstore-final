@@ -5,7 +5,7 @@ function CategoriesPage() {
         { id: 1, name: 'Fiction' },
         { id: 2, name: 'Science Fiction' },
         { id: 3, name: 'Mystery' },
-        { id: 4, name: 'Romance' },
+        { id: 4, name: 'Islamic' },
         { id: 5, name: 'Fantasy' },
     ];
 
